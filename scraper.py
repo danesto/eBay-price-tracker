@@ -26,7 +26,7 @@ def check_price():
     if (converted_price<=new_price):
         send_mail()
     else:
-        print(Fore.RED + 'Price did not drop! Checking on every 12 hours! ' + Fore.LIGHTYELLOW_EX + 'Current price is: ' + str(converted_price) + ' hljada eura')
+        print(Fore.RED + 'Price did not drop! Checking on every 12 hours! ' + Fore.LIGHTYELLOW_EX + 'Current price is: ' + str(converted_price))
     
     while(converted_price>new_price):
         time.sleep(21600)
